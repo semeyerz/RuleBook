@@ -3,39 +3,35 @@ The maximum time for this test is 5 minutes, 5 more for the optional guiding-pha
 
 \begin{scorelist}
 
-	% Up to 60 points
-	\scoreheading{Waypoint 1: Path planning}
-	\scoreitem{5}{Planing new trajectory after the door has been shut}
-	\scoreitem{50}{Opening the door and continue instead of planning a new trajectory}
-	\scoreitem{5}{Reaching waypoint 1}
-
-	% Up to 15 points
-	\scoreheading{Waypoint 2: Obstacle interaction}
-	\scoreitem{10}{Correctly state the nature of the obstacle blocking its path}
-	\scoreitem{5}{Reaching waypoint 2 (to grasp/place distance)}
-
 	% Up to 30 points
-	\scoreheading{Waypoint 3-4: Follow me}
-	\scoreitem{10}{Leaving the arena while following the \textit{Professional Walker}}
-	\scoreitem{20}{Reaching waypoint 4}
-	\scoreitem[10]{-2}{Penalty for asking \textit{Professional Walker} to wave to resume following.}
+	\scoreheading{Waypoint 1: Path planning}
+	\scoreitem{30}{Reaching waypoint 1}
 
 	% Up to 40 points
-	\scoreheading{Waypoint 4-3: Take me back home}
-	\scoreitem{15}{Locate the operator and resume guiding after two people interference}
-	\scoreitem{10}{Reentering the arena}
-	\scoreitem{5}{Reaching waypoint 3 after reentering the arena (i.e. after reaching waypoint 4)}
-	\scoreitem{10}{Reaching waypoint 3 with the operator (i.e. not having lost the operator)}
+	\scoreheading{Waypoint 2: Obstacle Interaction 1}
+	\scoreitem{10}{Correctly state the nature of the obstacle blocking its path}
+	\scoreitem{30}{Reaching waypoint 2 (to grasp/place distance)}
+
+	% Up to 40 points
+	\scoreheading{Waypoint 3: Obstacle Interaction 2}
+	\scoreitem{10}{Correctly state the nature of the obstacle blocking its path}
+	\scoreitem{30}{Reaching waypoint 3}
 	
 	% Up to 50 points
 	\scoreheading{Obstacle avoidance}
-	\scoreitem{5}{Avoiding box-sized object}
 	\scoreitem{10}{Avoiding 3D object (Difficult-to-see object)}
-	\scoreitem{5}{Asking a person to step aside}
+	\scoreitem{10}{Asking a person to step aside}
 	\scoreitem{30}{Moving away movable object}
+	%penalties for collisions
+	\scoreitem{-5}{colliding with 5x5x5 object}
+	\scoreitem{-10}{colliding with 10x10x10 object}
+	\scoreitem{-15}{colliding with 15x15x15 object}
 
-	% Up to 5 points
+	% Up to 40 points
 	\scoreheading{Leaving the arena}
+	\scoreitem{5}{Reaching the door via which the robot went out the apartment again. The handle must be within manipulator reach}
+	\scoreitem{15}{Pushing the door handle/knob/lever with manipulator}
+	\scoreitem{15}{Opening the door far enough to drive in}
 	\scoreitem{5}{Leaving the arena}
 
 	\setTotalScore{200}
